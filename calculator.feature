@@ -11,3 +11,7 @@ Feature: Calculator
   Scenario: Reject an unsupported operator
     When I use an operator the calculator does not support
     Then it raises an error
+
+  Scenario: Multiply two numbers
+    When I multiply 4 by 3
+    Then the result is 12
